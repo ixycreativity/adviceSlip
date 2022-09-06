@@ -1,0 +1,86 @@
+body, html {
+    margin:0;
+    height: 100%;
+    width: 100%;
+    background-color: #202632;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#adviceBubble {
+    background-color: #313A49;
+    border-radius: 20px;
+    padding: 30px 20px;
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#adviceTitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #53FFAB;
+    text-align: center;
+}
+
+#advice {
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 38px;
+text-align: center;
+color: #D9D9D9;
+}
+
+.line {
+    width: 100%;
+    height: auto;
+}
+
+.show-on-mobile {
+    display: none;
+}
+
+.diceCercle {
+    background-color: #53FFAB;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    margin-bottom: -62px;
+    text-align: center;
+    margin-top:40px;
+    cursor: pointer;
+}
+
+.dice {
+    width: 28px;
+    height: 28px;
+}
+
+@media only screen and (max-width: 600px) {
+    .show-on-mobile {
+        display: block;
+    }
+    .show-on-desktop {
+        display: none;
+    }
+    #adviceBubble {
+        width: 90%;
+    }
+  }
